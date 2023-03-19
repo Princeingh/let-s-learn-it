@@ -1,0 +1,576 @@
+*{
+    padding:0;
+    margin:0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+p{
+    font-size: 10px;
+}
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 10px;
+    
+    background: black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+header h2{
+    color:white;
+    padding:10px 10px;
+    font-size: 2em;
+}
+p{
+    font-size: 16px;
+    
+}
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    
+}
+.navigation a::after{
+    content:'';
+    position: absolute;
+    width:100%;
+    background: white;
+    height:3px;
+    left:0;
+    bottom:-7px;
+    border-radius: 6px;
+    transform:scaleX(0);
+    transition: .5s;
+}
+.navigation a:hover::after{
+    transform: scaleX(1);
+}
+.navigation .btn{
+margin-left: 20px;
+padding:10px 20px;
+border-radius: 9px;
+border:none;    
+color:black;
+background-color: white;
+transition: .5s;
+}
+.navigation .btn:hover{
+    color:green;
+    background-color: aqua;
+}
+section{
+    margin: 20px 10%;
+    
+}
+.scroll{
+    margin-top: 2.5cm;
+    background-color: wheat;
+    height: 65vh;
+    margin-bottom: 0px;
+    border-radius: 10px;
+}
+.Introduction h3{
+    text-align: center;
+    padding-top: 30px;
+    text-decoration: underline;
+    color:white;
+    font-size: 2em;
+}
+.description{
+    margin-left:30px;
+    margin-top: 30px;
+    display: flex;
+   margin-right: 30px;
+   padding-left: 10px;
+   padding-top:20px;
+   margin-bottom: 20px;
+    justify-content: center;
+    border:2px solid black;
+    border-radius:10px;
+    box-shadow: 0 0 20px rgba(0,0,0,1); 
+    margin-bottom: 20px;
+}
+.image img{
+    width:250px;
+    height:auto;
+}
+.text-para p{
+    margin-left: 20px;
+    line-height:1.3cm;
+}
+hr{
+    font-size: 2em;
+    color:black;
+}
+.talk-web{
+    background-color: rgb(98, 95, 95);
+    height:90vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+span{
+    color:red;
+}
+.talk-web h3{
+    text-align:center;
+    padding-top: 30px;
+    text-decoration: underline;
+    color:white;
+    font-size: 2em;
+}
+.W3Schools{
+    background-color: black;
+    color:white;
+    height:110vh;
+    border-radius: 10px;
+}
+.W3Schools h3{
+    text-align: center;
+    padding-top:30px;
+    font-size: 2em;
+    text-decoration: underline;
+}
+.JS p{
+    margin-left:2cm;
+    margin-right:2cm;
+}
+.youtube-ds p{
+    font-size: 20px;
+}
+
+.description-web p{
+    margin-top: 30px;
+    margin-left: 1cm;
+    margin-right: 1cm;
+    font-weight: 400;
+    line-height: .9cm;
+    font-size:20px;
+}
+.images{
+    margin-left: 30px;;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+.images img{
+    width:200px;
+    height: 50px;
+}
+.images .button-html{
+    margin-bottom: 1cm;
+    margin-right: 2cm;
+}
+.text-html{
+    margin-top: 20px;
+}
+.text-html p{
+    text-align: center;
+    color:white;
+}
+.text-css p{
+    text-align: center;
+    color:white;
+    margin-bottom: 20px;
+}
+.images2{
+    display: flex;
+    justify-content: center;
+}
+.images2 img{
+    width:200px;
+    height:150px;
+    margin-right: 2cm;
+    
+}
+.JS p{
+    margin-top: 60px;
+    margin-left: 1cm;
+    margin-right: 1cm;
+    font-weight: 400;
+    line-height: .9cm;
+    font-size: 20px;
+}
+.JS a:hover{
+background-color: black;
+color:white;
+}
+.w3-image img{
+    width:800px;
+    height:auto;   
+    margin-left: 1.8cm; 
+    margin-top: 1cm;
+}
+.JS .a{
+    background-color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: black;
+    transition: .5s;
+}
+.youtube{
+    background-color: black;
+    height: 120vh;
+    margin-top: 10px;
+    color:white;
+    margin-bottom: 0;
+    border-radius: 10px;
+}
+.youtube h3{
+    padding-top: 1.5cm;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2em;
+}
+.Image3 img{
+    width:1000px;
+    height:auto;   
+    margin-left: 1.8cm; 
+    margin-top: 1cm;
+}
+.learn{
+    background-color: gray;
+    height:130vh;
+    margin-top: 0;
+    margin-bottom: 0;;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.learn h3{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2em;
+    text-decoration: underline;
+}
+.youtube-ds p{
+    padding-left: 2cm;
+    padding-top: 1.5cm;
+    padding-right:2cm;
+    line-height: 1cm;
+}
+.row{
+    background-color: white;
+    width:310px;
+    height:auto;
+    border: 2px solid black;
+    margin-left: 30px;
+    margin-top: 2cm;
+    position: relative;
+    border-radius: 10px;
+    transition: .5s;
+    overflow: hidden;
+    
+}
+.row:hover{
+    transform: scale(.9);
+}
+.youtube-vdos{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    gap:20px;
+    
+}
+.imgage5 img{
+    width:300px;
+    height:auto;
+    border:none;
+    padding-left:10px;
+    padding-top:10px;
+    
+   
+
+
+}
+.text-des p{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.text-des a{
+    position: absolute;
+    top:5cm;
+    right:12px;
+    color:black;
+    font-size: 2.5em;
+}
+.youtube-short-txt p{
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 2cm;
+    color:white;
+    line-height: 1cm;
+}
+.personal-how{
+    height:170vh;
+    background: black;
+    color:white;
+    border-radius: 10px;;
+}
+.personal-how h3{
+    text-align: center;
+    padding-top:2cm;
+    font-size: 3em;
+    text-decoration: underline ;
+}
+.review{
+    position:relative;
+    width:600px;
+    height:auto;
+    background:gray;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius:20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,1);
+    display:flex;
+   align-items: center;
+   justify-content: center;
+    margin-top:3cm;;
+    margin-left:7.5cm;
+    margin-right: 9cm;
+    margin-bottom: .2cm;
+}
+.images9{
+    margin-bottom: 0;
+
+}
+.images9 img{
+    width:300px;
+    height:auto;
+    margin-top: 20px;
+    border-radius: 250px;
+    margin-bottom: 0;
+    align-items: center;
+    
+    margin-left: 4cm;
+}
+.des-he{
+ margin-top:0 ;
+}
+.des-he h3{
+    text-decoration: none;
+    font-size: 2em;
+    margin-top: 0;
+}
+.des-he p{
+    text-align: center;
+}
+.how-ses p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    color:black;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 30px;
+    align-items: center;
+    padding-bottom:20px;;
+    text-overflow: hidden;
+    text-justify: center;
+}
+.gif{
+    margin-left: 7cm;
+    margin-top: 0;
+}
+.gif img{
+    font-size: 1em;
+    margin-left: 4.5cm;
+}
+@media only screen and (min-width:320px) and (max-width:480px){
+    header{
+        width:100%;
+    }
+    .Logo{
+        font-size: 1.3em;
+        padding-left: 0;
+        margin-left:2.5cm;
+    }
+    .scroll{
+
+        width: 400px;
+        height: 55vh;
+    }
+    .navigation{
+        display:none;
+    }
+    .image img{
+        width:140px;
+        height:auto;
+        padding-right: 0;
+    }
+    .text-para p{
+        font-size: 10px;
+        line-height: 13px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 0;
+        
+    }
+    .youtube{
+        width:400px;
+        height:79vh;
+    }
+    .description-web p{
+        font-size: 10px;
+        line-height: 19px;
+        font-weight: 1000;
+    }
+    .Image3 img{
+        width:340px;
+        margin-left: 1cm;
+
+    }
+    .talk-web h3{
+        font-size: 20px;
+    }
+    .talk-web{
+        width:400px;
+        height:90vh;
+    }
+    
+    .text-html p{
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .images img{
+        width:120px;
+        height:auto;
+        justify-content: center;
+    }
+    .images2 {
+        margin-left:2.5cm;
+    }
+
+    .images2 img{
+        width:130px;
+        height:100px;
+    }
+    .W3Schools{
+        width:400px;
+        height:120vh;
+    }
+    .JS p{
+        font-size:12px;
+        margin-top:1cm;
+
+    }
+    .W3Schools h3{
+        font-size:1.3em;
+        margin-bottom: 0;
+    }
+    .w3-image img{
+        width:300px;
+        margin-left: 1cm;
+    }
+    .learn{
+        width:400px;
+        height:440vh;
+    }
+    .learn h3{
+        font-size:1.3em;
+    }
+
+    .imgage5 img{
+        padding-left:0cm;
+        height:auto;
+        width:250px;
+        padding-top: 0;
+        height:300px
+    }
+    .row{
+        margin-left:2.4cm;
+        width:250px;
+    }
+    
+    .text-des{
+        margin-bottom:0.2cm;
+    }
+    
+    
+    .text-des p{
+        
+        font-size: 9px;
+        line-height:20px;
+    }
+    .youtube-ds p{
+        font-size: 14px;
+        line-height: 30px;
+        font-weight: 400;
+        color:white;
+        padding-right: 10px;
+        padding-left:1cm;
+    }
+    .personal-how{
+        width:400px;
+        height:170vh;
+    }
+   
+    .des-he p{
+        font-size: 20px;
+    }
+    .how-ses p{
+        font-size: 13px;
+        line-height: 25px;
+        font-weight: 900;
+        color:black;
+        padding-right: 10px;
+        padding-left:10px;
+    }
+    .gif img{
+       margin-left:0;
+       padding-right:5cm ;
+       align-items: center;
+       justify-content: center;
+        
+        width:300px;
+    }
+    .review{
+        width:350px;
+        margin-left:.6cm;
+        margin-top: 30px;
+    }
+    .des-he h3{
+        margin-top: 0;
+        font-size: 25px;
+    }
+    .images9 img{
+        margin-left:0.8cm;
+        margin-bottom:0;
+        
+    }
+    
+   
+
+    section{
+        align-items: center;
+        margin-left:4.5cm;
+        
+        
+    }
+   .text-des a{
+    position: absolute;
+    top:8.7cm;
+    right:7px;
+    color:black;
+    font-size: 2em;
+}
+.youtube-short-txt p{
+    font-size: 16px;
+    line-height: 19px;
+}
+}
+
+ 
+    
+
